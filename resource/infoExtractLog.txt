@@ -1,0 +1,1 @@
+{"carCount": [151, 151], "roadType": [144, 151], "laneCount": [141, 151], "weather": [118, 151], "striker": [150, 151], "impactPart": [136, 151], "direction": [271, 302], "lane": [221, 302], "action": [230, 302], "targetLane": [232, 302]}
