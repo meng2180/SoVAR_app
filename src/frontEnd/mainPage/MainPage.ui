@@ -1,0 +1,1760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1039</width>
+    <height>913</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(231,231,231);color:rgb(236,236,236);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>640</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,0,0);background-color:rgb(236,236,236);</string>
+    </property>
+    <property name="text">
+     <string>CarCount:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxCarCount">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>640</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+	background-color:rgb(236,236,236);
+	color:rgb(0, 0 ,0);
+	border:1px solid rgb(190, 190, 190);
+}
+QComboBox QAbstractItemView {
+    outline: 0px solid gray; 
+    color: rgb(0, 0, 0);
+    background-color: rgb(236,236,236);   
+}
+QComboBox QAbstractItemView::item:selected {
+    color: rgb(236,236,236);
+	background-color: rgb(20, 136, 208); 
+}
+
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>640</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,0,0);background-color:rgb(236,236,236);</string>
+    </property>
+    <property name="text">
+     <string>RoadType:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxRoadType">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>640</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+	background-color:rgb(236,236,236);
+	color:rgb(0, 0 ,0);
+	border:1px solid rgb(190, 190, 190);
+}
+QComboBox QAbstractItemView {
+    outline: 0px solid gray; 
+    color: rgb(0, 0, 0);
+    background-color: rgb(236,236,236);    
+}
+QComboBox QAbstractItemView::item:selected {
+    color: rgb(236,236,236);
+	background-color: rgb(20, 136, 208); 
+}
+
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>740</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,0,0);background-color:rgb(236,236,236);</string>
+    </property>
+    <property name="text">
+     <string>V1Direction：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxV1Direction">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>740</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+	background-color:rgb(236,236,236);
+	color:rgb(0, 0 ,0);
+	border:1px solid rgb(190, 190, 190);
+}
+QComboBox QAbstractItemView {
+    outline: 0px solid gray; 
+    color: rgb(0, 0, 0);
+    background-color: rgb(236,236,236);    
+}
+QComboBox QAbstractItemView::item:selected {
+    color: rgb(236,236,236);
+	background-color: rgb(20, 136, 208); 
+}
+
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>740</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,0,0);background-color:rgb(236,236,236);</string>
+    </property>
+    <property name="text">
+     <string>V1Lane：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxV1Lane">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>740</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+	background-color:rgb(236,236,236);
+	color:rgb(0, 0 ,0);
+	border:1px solid rgb(190, 190, 190);
+}
+QComboBox QAbstractItemView {
+    outline: 0px solid gray; 
+    color: rgb(0, 0, 0);
+    background-color: rgb(236,236,236);     
+}
+QComboBox QAbstractItemView::item:selected {
+    color: rgb(236,236,236);
+	background-color: rgb(20, 136, 208); 
+}
+
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>640</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0, 0, 0);background-color:rgb(236,236,236);</string>
+    </property>
+    <property name="text">
+     <string>LaneCount：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxLaneCount">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>640</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+	background-color:rgb(236,236,236);
+	color:rgb(0, 0 ,0);
+	border:1px solid rgb(190, 190, 190);
+}
+QComboBox QAbstractItemView {
+    outline: 0px solid gray; 
+    color: rgb(0, 0, 0);
+   background-color: rgb(236,236,236);    
+}
+QComboBox QAbstractItemView::item:selected {
+    color: rgb(236,236,236);
+	background-color: rgb(20, 136, 208); 
+}
+
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>740</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,0,0);background-color:rgb(236,236,236);</string>
+    </property>
+    <property name="text">
+     <string>V1Action：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxV1Action">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>740</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+	background-color:rgb(236,236,236);
+	color:rgb(0, 0 ,0);
+	border:1px solid rgb(190, 190, 190);
+}
+QComboBox QAbstractItemView {
+    outline: 0px solid gray; 
+    color: rgb(0, 0, 0);
+    background-color: rgb(236,236,236);    
+}
+QComboBox QAbstractItemView::item:selected {
+    color: rgb(236,236,236);
+	background-color: rgb(20, 136, 208); 
+}
+
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxV1TargetLane">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>740</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+	background-color:rgb(236,236,236);
+	color:rgb(0, 0 ,0);
+	border:1px solid rgb(190, 190, 190);
+}
+QComboBox QAbstractItemView {
+    outline: 0px solid gray; 
+    color: rgb(0, 0, 0);
+    background-color: rgb(236,236,236);     
+}
+QComboBox QAbstractItemView::item:selected {
+    color: rgb(236,236,236);
+	background-color: rgb(20, 136, 208); 
+}
+
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>740</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,0,0);background-color:rgb(236,236,236);</string>
+    </property>
+    <property name="text">
+     <string>V1TargetLane：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxV2Lane">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>790</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+	background-color:rgb(236,236,236);
+	color:rgb(0, 0 ,0);
+	border:1px solid rgb(190, 190, 190);
+}
+QComboBox QAbstractItemView {
+    outline: 0px solid gray; 
+    color: rgb(0, 0, 0);
+    background-color: rgb(236,236,236);  
+}
+QComboBox QAbstractItemView::item:selected {
+    color: rgb(236,236,236);
+	background-color: rgb(20, 136, 208); 
+}
+
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxV2TargetLane">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>790</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+	background-color:rgb(236,236,236);
+	color:rgb(0, 0 ,0);
+	border:1px solid rgb(190, 190, 190);
+}
+QComboBox QAbstractItemView {
+    outline: 0px solid gray; 
+    color: rgb(0, 0, 0);
+    background-color: rgb(236,236,236);  
+}
+QComboBox QAbstractItemView::item:selected {
+    color: rgb(236,236,236);
+	background-color: rgb(20, 136, 208); 
+}
+
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxV2Action">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>790</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+	background-color:rgb(236,236,236);
+	color:rgb(0, 0 ,0);
+	border:1px solid rgb(190, 190, 190);
+}
+QComboBox QAbstractItemView {
+    outline: 0px solid gray; 
+    color: rgb(0, 0, 0);
+   background-color: rgb(236,236,236);  
+}
+QComboBox QAbstractItemView::item:selected {
+    color: rgb(236,236,236);
+	background-color: rgb(20, 136, 208); 
+}
+
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelV2Lane">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>790</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,0,0);background-color:rgb(236,236,236);</string>
+    </property>
+    <property name="text">
+     <string>V2Lane：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelV2TargetLane">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>790</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,0,0);background-color:rgb(236,236,236);</string>
+    </property>
+    <property name="text">
+     <string>V2TargetLane:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelV2Direction">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>790</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,0,0);background-color:rgb(236,236,236);</string>
+    </property>
+    <property name="text">
+     <string>V2Direction：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelV2Action">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>790</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,0,0);background-color:rgb(236,236,236);</string>
+    </property>
+    <property name="text">
+     <string>V2Action：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxV2Direction">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>790</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+	background-color:rgb(236,236,236);
+	color:rgb(0, 0 ,0);
+	border:1px solid rgb(190, 190, 190);
+}
+QComboBox QAbstractItemView {
+    outline: 0px solid gray; 
+    color: rgb(0, 0, 0);
+    background-color: rgb(236,236,236);   
+}
+QComboBox QAbstractItemView::item:selected {
+    color: rgb(236,236,236);
+	background-color: rgb(20, 136, 208); 
+}
+
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>740</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,0,0);background-color:rgb(236,236,236);</string>
+    </property>
+    <property name="text">
+     <string>V1Speed：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelV2Speed">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>790</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,0,0);background-color:rgb(236,236,236);</string>
+    </property>
+    <property name="text">
+     <string>V2Speed：</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBoxV2Speed">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>790</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	background-color:rgb(236,236,236);
+	color:rgb(0, 0 ,0);
+	border:1px solid rgb(190, 190, 190);
+
+
+</string>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>20</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBoxV1Speed">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>740</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+	background-color:rgb(236,236,236);
+	color:rgb(0, 0 ,0);
+	border:1px solid rgb(190, 190, 190);
+
+
+</string>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>20</number>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowserWaypoint">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>340</y>
+      <width>411</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(236,236,236);
+border:1px solid rgb(190, 190, 190);
+color:rgb(0,0,0)</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxEgo">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>300</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+	background-color:rgb(236,236,236);
+	color:rgb(0, 0 ,0);
+	border:1px solid rgb(190, 190, 190);
+}
+QComboBox QAbstractItemView {
+    outline: 0px solid gray; 
+    color: rgb(0, 0, 0);
+    background-color: rgb(236,236,236);  
+}
+QComboBox QAbstractItemView::item:selected {
+    color: rgb(236,236,236);
+	background-color: rgb(20, 136, 208); 
+}
+
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>300</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,0,0);background-color:rgb(231,231,231);</string>
+    </property>
+    <property name="text">
+     <string>EGO：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>640</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,0,0);background-color:rgb(236,236,236);</string>
+    </property>
+    <property name="text">
+     <string>Weather：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxWeather">
+    <property name="geometry">
+     <rect>
+      <x>866</x>
+      <y>640</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+	background-color:rgb(231,231,231);
+	color:rgb(0, 0 ,0);
+	border:1px solid rgb(190, 190, 190);
+}
+QComboBox QAbstractItemView {
+    outline: 0px solid gray; 
+    color: rgb(0, 0, 0);
+    background-color: rgb(236,236,236);    
+}
+QComboBox QAbstractItemView::item:selected {
+    color: rgb(236,236,236);
+	background-color: rgb(20, 136, 208); 
+}
+
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditWeather">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>640</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+	background-color:rgb(236,236,236);
+	color:rgb(0, 0 ,0);
+	border:1px solid rgb(190, 190, 190);
+
+
+
+
+</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxImpactPart">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>690</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+	background-color:rgb(236,236,236);
+	color:rgb(0, 0 ,0);
+	border:1px solid rgb(190, 190, 190);
+}
+QComboBox QAbstractItemView {
+    outline: 0px solid gray; 
+    color: rgb(0, 0, 0);
+    background-color: rgb(236,236,236);    
+}
+QComboBox QAbstractItemView::item:selected {
+    color: rgb(236,236,236);
+	background-color: rgb(20, 136, 208); 
+}
+
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>690</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,0,0);background-color:rgb(236,236,236);</string>
+    </property>
+    <property name="text">
+     <string>Striker:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>690</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,0,0);background-color:rgb(236,236,236);</string>
+    </property>
+    <property name="text">
+     <string>HitPart：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxStriker">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>690</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+	background-color:rgb(236,236,236);
+	color:rgb(0, 0 ,0);
+	border:1px solid rgb(190, 190, 190);
+}
+QComboBox QAbstractItemView {
+    outline: 0px solid gray; 
+    color: rgb(0, 0, 0);
+    background-color: rgb(236,236,236);   
+}
+QComboBox QAbstractItemView::item:selected {
+    color: rgb(236,236,236);
+	background-color: rgb(20, 136, 208); 
+}
+
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(20, 136, 208);</string>
+    </property>
+    <property name="text">
+     <string>Report Extract Result</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>10</y>
+      <width>491</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(20, 136, 208);</string>
+    </property>
+    <property name="text">
+     <string>Cumulative Accuracy of Accident Information Extraction</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="barWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>50</y>
+      <width>571</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(236,236,236);
+border:1px solid rgb(190, 190, 190);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>590</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(20, 136, 208);</string>
+    </property>
+    <property name="text">
+     <string>Crash Information Ground Truth Config</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>300</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(20, 136, 208);</string>
+    </property>
+    <property name="text">
+     <string>Test Case Result</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowserInfo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>411</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(236,236,236);
+border:1px solid rgb(190, 190, 190);
+color:rgb(0,0,0)</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>630</y>
+      <width>1001</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(236,236,236);
+border:1px solid rgb(190, 190, 190);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>590</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,0,0);background-color:rgb(231,231,231);</string>
+    </property>
+    <property name="text">
+     <string>Apply To Test Case Generation</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>10</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,0,0);background-color:rgb(231,231,231);</string>
+    </property>
+    <property name="text">
+     <string>Add To Record</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxAddToGenerate">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>590</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(20, 136, 208)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxAddToRecord">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>10</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(20, 136, 208)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelCopyInfoGPT">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>4</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;color:black&quot;&gt;点击复制结果&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelCopyWaypoint">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>300</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;color:black&quot;&gt;点击复制结果&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelCopyInfoGT">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>590</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;color:black&quot;&gt;点击复制配置&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelCopyRate">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>10</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;color:black&quot;&gt;点击复制准确率&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>widget</zorder>
+   <zorder>label_2</zorder>
+   <zorder>comboBoxCarCount</zorder>
+   <zorder>label_3</zorder>
+   <zorder>comboBoxRoadType</zorder>
+   <zorder>label_4</zorder>
+   <zorder>comboBoxV1Direction</zorder>
+   <zorder>label_5</zorder>
+   <zorder>comboBoxV1Lane</zorder>
+   <zorder>label_8</zorder>
+   <zorder>comboBoxLaneCount</zorder>
+   <zorder>label_9</zorder>
+   <zorder>comboBoxV1Action</zorder>
+   <zorder>comboBoxV1TargetLane</zorder>
+   <zorder>label_10</zorder>
+   <zorder>comboBoxV2Lane</zorder>
+   <zorder>comboBoxV2TargetLane</zorder>
+   <zorder>comboBoxV2Action</zorder>
+   <zorder>labelV2Lane</zorder>
+   <zorder>labelV2TargetLane</zorder>
+   <zorder>labelV2Direction</zorder>
+   <zorder>labelV2Action</zorder>
+   <zorder>comboBoxV2Direction</zorder>
+   <zorder>label_11</zorder>
+   <zorder>labelV2Speed</zorder>
+   <zorder>spinBoxV2Speed</zorder>
+   <zorder>spinBoxV1Speed</zorder>
+   <zorder>textBrowserWaypoint</zorder>
+   <zorder>comboBoxEgo</zorder>
+   <zorder>label_12</zorder>
+   <zorder>label_13</zorder>
+   <zorder>comboBoxWeather</zorder>
+   <zorder>lineEditWeather</zorder>
+   <zorder>comboBoxImpactPart</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>comboBoxStriker</zorder>
+   <zorder>label_14</zorder>
+   <zorder>label_15</zorder>
+   <zorder>barWidget</zorder>
+   <zorder>label_16</zorder>
+   <zorder>label_17</zorder>
+   <zorder>textBrowserInfo</zorder>
+   <zorder>label_18</zorder>
+   <zorder>label_19</zorder>
+   <zorder>checkBoxAddToGenerate</zorder>
+   <zorder>checkBoxAddToRecord</zorder>
+   <zorder>labelCopyInfoGPT</zorder>
+   <zorder>labelCopyWaypoint</zorder>
+   <zorder>labelCopyInfoGT</zorder>
+   <zorder>labelCopyRate</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1039</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMenuBar{
+	background-color:rgb(125,182,191);
+	border:none;
+
+}
+QMenuBar::item{
+	color:white;
+	padding:10px;
+}
+QMenuBar::item:selected{
+	background-color: rgb(20, 136, 208);
+}
+QMenuBar::item:pressed{
+	background-color: rgb(20, 136, 208);
+}</string>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QMenu{
+	background-color: rgb(236,236,236);  
+	border:1px solid rgb(190, 190, 190);
+}
+QMenu::item{
+	color:rgb(0,0,0)
+}
+QMenu::selected{
+	background-color:  rgb(20, 136, 208);
+}
+QMenu::pressed{
+	background-color:  rgb(20, 136, 208);
+}
+
+</string>
+    </property>
+    <property name="title">
+     <string>File(&amp;F)</string>
+    </property>
+    <addaction name="actionImport"/>
+    <addaction name="separator"/>
+    <addaction name="actionGenerate"/>
+    <addaction name="separator"/>
+    <addaction name="actionPreview"/>
+    <addaction name="separator"/>
+    <addaction name="actionSimulate"/>
+    <addaction name="separator"/>
+    <addaction name="actionTest"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_S_2">
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QMenu{
+	background-color: rgb(236,236,236);  
+	border:1px solid rgb(190, 190, 190)
+}
+QMenu::item{
+	color:rgb(0,0,0);
+}
+QMenu::selected{
+	background-color:  rgb(20, 136, 208);
+}
+QMenu::pressed{
+	background-color:  rgb(20, 136, 208);
+}
+
+</string>
+    </property>
+    <property name="title">
+     <string>Settings(&amp;S)</string>
+    </property>
+    <addaction name="actionApiKey"/>
+    <addaction name="separator"/>
+    <addaction name="actionModel"/>
+    <addaction name="separator"/>
+    <addaction name="actionMap"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_S_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(125,182,191);
+border:none;
+border-top:1px solid rgb(92,93,93);
+</string>
+   </property>
+   <property name="sizeGripEnabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <action name="actionImport">
+   <property name="text">
+    <string>Import Report</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionopen_video">
+   <property name="text">
+    <string>打开视频</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionopen_camera">
+   <property name="text">
+    <string>打开摄像头</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionVersion">
+   <property name="text">
+    <string>版本</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="action_generate">
+   <property name="text">
+    <string>生成</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="action_setpswd">
+   <property name="text">
+    <string>修改密码</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_setphone">
+   <property name="text">
+    <string>修改手机</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+S</string>
+   </property>
+  </action>
+  <action name="action_setemail">
+   <property name="text">
+    <string>修改邮箱</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Y</string>
+   </property>
+  </action>
+  <action name="action_setsend">
+   <property name="text">
+    <string>推送设置</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+T</string>
+   </property>
+  </action>
+  <action name="action_setmodel">
+   <property name="text">
+    <string>模型设置</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+X</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>关于</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionsetargument">
+   <property name="text">
+    <string>参数设置</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+C</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>帮助</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actionexplain">
+   <property name="text">
+    <string>说明</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+E</string>
+   </property>
+  </action>
+  <action name="action_setmod">
+   <property name="text">
+    <string>模型设置</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="actionApiKey">
+   <property name="text">
+    <string>API Key</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+K</string>
+   </property>
+  </action>
+  <action name="actionGenerate">
+   <property name="text">
+    <string>Generate Test Case</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="actionPreview">
+   <property name="text">
+    <string>Preview Test Case</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionSimulate">
+   <property name="text">
+    <string>Reconstruction Effect Test</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionTest">
+   <property name="text">
+    <string>Simulation Test</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionMap">
+   <property name="text">
+    <string>Map</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="actionModel">
+   <property name="text">
+    <string>Model</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
