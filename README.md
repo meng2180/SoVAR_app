@@ -1,4 +1,4 @@
-### SoVAR_APP
+### SoVAR
 
 ---
 
