@@ -37,7 +37,9 @@ This is an automatic driving software test case generation system based on large
 
    It is worth noting that the system provides a copy function for each display result, and you can copy this information for use.
 
-### Citation
+#### Citation
+
+---
 
 ```shell
 @inproceedings{10.1145/3691620.3695037,
